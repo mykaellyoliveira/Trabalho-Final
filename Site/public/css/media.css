@@ -1,0 +1,86 @@
+@media (max-width: 500px){
+    header {
+        background-color: white;
+        padding: 0px;
+	}
+	header nav {
+		width: 100%;
+		display: none;
+		background-color: white;
+	}
+	header nav ul li {
+		width: 100%;
+		display: block;
+		background-color: white;
+		margin: 10px 20px;
+		padding: 0px;
+		text-align: center;
+	}
+	header img {
+		height: 45px;
+	}
+    #menu, .show{
+        display: block;
+	}
+	#menu img{
+		margin-top: 5px;
+		height: 32px;
+	}
+	.galleryContainer{
+		height: 200px;
+	}
+	.galleryContainer .slideShowContainer>.captionTextHolder {
+		width: 100px;
+		height: 25px;
+		line-height: 25px;
+		font-size: 13px;
+		padding: 10px;
+	}
+	.galleryContainer .slideShowContainer .leftArrow, .galleryContainer .slideShowContainer .rightArrow{
+		width: 30px;
+		height: 50px;
+
+	}
+	.container{
+		margin: 15px auto;
+	}
+	#sobre, #estrutura, #planos {
+		width: 90%;
+	}
+	#estrutura .grid_est, footer {
+		grid-template-columns: 100%;
+	}
+	.grid_est .fotos {
+		width: 100%;
+	}
+	#planos .grid_plan{
+		width: 98%;
+		grid-template-columns: 100%;
+	}
+	.grid_plan .plano{
+		width: 80%;
+		margin: 10px auto;
+	}
+	#plan #buttonP{
+		margin: 5px 20px;
+	}
+	.grid_foot #redes {
+		float: left;
+	}
+	/* form calculadora */
+	.forms{
+		width: 90%;
+		grid-template-columns: 100%;
+	}
+	.bloco2{
+		display: none;
+	}
+	.modal-busca{
+		width: 100%;
+		height: 150px;
+		grid-template-columns: 100%;
+	}
+	.popno{
+		display: none;
+	}
+}

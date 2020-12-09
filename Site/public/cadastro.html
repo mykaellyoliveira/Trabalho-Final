@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Cadastro</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' href='css/style.css'>
+    <link rel='stylesheet' type='text/css' href='css/media.css'>
+    <link rel="shortcut icon" type="image/png" href="img/logo.png">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+</head>
+<body>
+    <header>
+        <a href="index.html" title="Página inicial">
+            <img src="img/logo2.png" title="Logo Academia" alt="Logo Academia" class="logo">
+        </a>
+
+        <a href="#" id="menu">
+            <img src="img/menu.png"></img>
+        </a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html#sobre">Sobre</a>
+                </li>
+
+                <li>
+                    <a href="index.html#estrutura">Estrutura</a>
+                </li>
+
+                <li>
+                    <a href="index.html#planos">Planos</a>
+                </li>
+                
+                <li>
+                    <a href="index.html#localizacao">Localização</a>
+                </li>
+                
+                <li>
+                    <a href="calculadora.html">IMC</a>
+                </li>
+
+                <li>
+                    <a href="contato.html">Contato</a>
+                </li>
+
+                <li>
+                    <a href="cadastro.html"><button id="buttonC">Cadastro</button></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="forms">
+            <div class="bloco2"> 
+                <img src="img/formcad.png">                
+            </div>
+            <div class="bloco">
+                <form novalidate>
+                    <h1>Faça seu cadastro:</h1>
+                    <input id="name" class="inputs" placeholder="Digite seu nome completo:">
+
+                    <input id="email" type="email" class="inputs" placeholder="Digite seu email:">
+
+                    <input id="telephone" class="inputs" placeholder="Digite seu telefone:">
+
+                    <select id="gender" required>
+                        <option value="">Selecione seu gênero:</option>
+                        <option value="f">Feminino</option>
+                        <option value="m">Masculino</option>
+                    </select>
+                        
+                    <select id="citys" required>
+                        <option value="">Selecione sua cidade:</option>
+                        <option value="s">Sarandi</option>
+                        <option value="m">Maringá</option>
+                    </select>
+
+                    <select id="objective" required>
+                        <option value="">Selecione seu objetivo:</option>
+                        <option value="g">Ganhar músculos</option>
+                        <option value="m">Manter a forma</option>
+                        <option value="p">Perder peso</option>
+                    </select>
+                        
+                   <p id="recom">Plano recomendado:</p>
+                    <select id="plans" required>
+                        <option value="">Planos promocionais: </option>
+                        <option value="b">Básico (R$ 109,90) </option>
+                        <option value="m">Médio  (R$ 159,90)</option>
+                        <option value="a">Avançado (R$ 199,90)</option>
+                        <option value="s">Saiba mais sobre os planos</option> 
+                    </select>
+
+                    <button> Cadastrar </button>                
+                    <p id="message"></p>
+                </form>
+            </div>
+        </div>
+    </div>
+   <!--Rodapé -->
+    <footer>       
+        <div class="grid_foot">
+            <div id="redes">
+                <img src="img/logo1.png" class="logo">
+                <ul class="redes">
+                    <li>
+                        <img src="img/f.png">
+                    </li>
+
+                    <li>
+                        <img src="img/i.png">
+                    </li>
+                        
+                   <li>
+                        <img src="img/w.png">
+                    </li>
+                        
+                   <li>
+                        <img src="img/e.png">
+                    </li>
+                </ul>
+            </div>
+         </div>
+        <div class="grid_foot">
+            <h1>Menu</h1>
+            <hr>
+            <ul>
+                <li>
+                    <a href="#sobre">Sobre</a>
+                </li>
+
+                <li>
+                    <a href="#estrutura">Estrutura</a>
+                </li>
+                
+                <li>
+                    <a href="#localizacao">Localização</a>
+                </li>
+                
+                <li>
+                    <a href="calculadora.html">IMC</a>
+                </li>
+
+                <li>
+                    <a href="contato.html">Contato</a>
+                </li>
+            </ul>
+        </div>
+        <div class="grid_foot">
+            <h1>Atendimento:</h1>
+            <hr>
+            <p> Segunda à Sexta 7h às 22h. </p></br>
+            <p> Sábados das 8h às 19h.</p>
+        </div>
+        <div class="grid_foot">
+            <h1>Localização</h1>
+            <hr>
+            <p>Endereço 1:</p>
+            <p> Av. João Marangoni, 1249 - Novo Panorama, Sarandi - PR</p></br>
+            <p>Endereço 2:</p>
+            <p>Sobreloja do Hipermercado Condor - Av. Colombo, 3404 - Zona 7, Maringá - PR</p>
+        </div>
+    </footer>
+     <nav>Desenvolvido por Maristela, Mykaelly e Yasmin.</nav>
+</body>
+    <script src="js/jQuery.weightMask.min.js"></script>  
+    <script src='js/anima.js' type='text/javascript'></script>
+    <script src="register_person.js" type="module"></script>
+</html>

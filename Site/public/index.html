@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Academia EasyFit</title>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' href='css/style.css'>
+    <link rel='stylesheet' type='text/css' href='css/media.css'>
+    <link rel="shortcut icon" type="image/png" href="img/logo.png">
+</head>
+<body onLoad="setDisabled()">
+    <header>
+        <a href="index.html" title="Página inicial">
+            <img src="img/logo2.png" title="Logo Academia" alt="Logo Academia" class="logo">
+        </a>
+
+        <a href="#" id="menu">
+            <img src="img/menu.png"></img>
+        </a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#sobre">Sobre</a>
+                </li>
+
+                <li>
+                    <a href="#estrutura">Estrutura</a>
+                </li>
+                
+                <li>
+                    <a href="#planos">Planos</a>
+                </li>
+                
+                <li>
+                    <a href="#localizacao">Localização</a>
+                </li>
+                
+                <li>
+                    <a href="calculadora.html">IMC</a>
+                </li>
+
+                <li>
+                    <a href="contato.html">Contato</a>
+                </li>
+
+                <li>
+                    <a href="cadastro.html"><button id="buttonC">Cadastro</button></a>
+                </li>
+            </ul>
+        </nav>
+    </header>  
+    <!--Carroussel -->
+    <div class="galleryContainer">
+        <div class="slideShowContainer">
+            <div onclick="plusSlides(-1)" class="nextPrevBtn leftArrow"><span class="arrow arrowLeft"></span></div>
+            <div onclick="plusSlides(1)" class="nextPrevBtn rightArrow"><span class="arrow arrowRight"></span></div>
+            <div class="captionTextHolder"><a href="" class="captionText slideTextFromTop"></a></div>
+            <div class="imageHolder">
+                <img src="img/img_1.png">
+                <a href="calculadora.html" class="captionText">Calcular</a>
+            </div>
+            <div class="imageHolder">
+                <img src="img/img_2.png">
+                <a href="contato.html" class="captionText">Contato</a>
+            </div>
+            <div class="imageHolder">
+                <img src="img/img_3.png">
+                <a href="cadastro.html" class="captionText">Cadastrar-se</a>
+            </div>
+        </div>
+        <div id="dotsContainer"></div>
+    </div>
+    <!-- Blocos de informações-->
+    <div class="container">
+        <!--sobre-->
+        <div id="sobre">
+            <h1>Sobre a academia:</h1>
+            <hr>
+            <div id="texto">
+                <p> Em novembro de 2013, a EasyFit iniciou suas atividades e desde então, acompanhamos e nos adequamos à 
+                    marcante evolução da indústria do Fitness sempre atentos aos anseios daquele que é a razão da nossa 
+                    existência: o associado.</p></br>
+                <p>   Aqui você encontra um ambiente agradável e familiar com uma equipe disposta a te atender da melhor 
+                    forma e todos os itens necessários para você praticar atividades físicas de forma saudável e segura. 
+                    Além de oferecer suporte para todos os públicos e níveis de aptidão física. Neste lugar, a sua única 
+                    preocupação é cuidar do corpo e da mente.</p></br>
+                <p> Para auxiliar na sua rotina, oferecemos serviços essenciais terceirizados para deixar o seu dia mais
+                    prático e saudável. Tenha acesso a psicólogos, fisioterapeutas, nutricionistas e instrutores, tudo em 
+                    um só lugar.</p></br>
+                <p> Muito mais que uma academia, a EasyFit quer auxiliar na melhoria da qualidade de vida das pessoas, 
+                    através de atendimentos personalizados, com profissionais comprometidos e qualificados para garantir 
+                    que seu treino seja feito de acordo com o seu objetivo. </p>
+                <p> Será um grande prazer tê-lo aqui conosco. Venha nos conhecer! Estamos abertos de segunda à sexta 
+                    7h às 22h. Sábados das 8h às 19h.</p>
+            </div>
+        </div>
+        <!--estrutura-->
+        <div id="estrutura">
+            <h1>Conheça a EasyFit:</h1>
+            <hr>
+            <div class="grid_est">
+                <img src="img/foto1.jpg" class="fotos">
+
+                <img src="img/foto2.jpg" class="fotos">
+
+                <img src="img/foto3.jpg" class="fotos">
+
+                <img src="img/foto4.jpg" class="fotos">
+            </div>
+        </div>
+        <!--planos-->
+        <div id="planos">
+            <h1>Planos promocionais:</h1>
+            <hr>
+            <div class="grid_plan">
+                <div class="plano">
+                    <img src="img/barbell.png">
+                    <h2>Pacote básico</h2>
+                    <ul>
+                        <li>
+                            Musculação
+                        </li>
+        
+                        <li>
+                           BodyPump
+                        </li>
+                        
+                        <li>
+                           Treinamento funcional
+                        </li>
+                        
+                        <li>
+                            Nutricionista
+                        </li>
+        
+                        <li>
+                           Instrutor 
+                        </li>
+                    </ul>
+                    <div id="plan">
+                        <h3>R$ 109,90</h3>
+                        <button class="basico"id="buttonP">Quero esse</button>
+                    </div>
+                </div>
+                <div class="plano" id="medio">
+                    <img src="img/heart.png">
+                    <h2>Pacote médio</h2>
+                    <ul>
+                        <li>
+                            Pilates
+                        </li>
+        
+                        <li>
+                           Jump
+                        </li>
+                        
+                        <li>
+                            Musculação
+                        </li>
+                        
+                        <li>
+                            Psicólogos
+                        </li>
+        
+                        <li>
+                           Nutricionista 
+                        </li>
+
+                        <li>
+                            Instrutor
+                         </li>
+                    </ul>
+                    <div id="plan">
+                        <h3>R$ 159,90</h3>
+                        <button class="medio" id="buttonP">Quero esse</button>
+                    </div>    
+                </div>
+                <div class="plano">
+                    <img src="img/fita.png">
+                    <h2>Pacote avançado</h2>
+                    <ul>
+                        <li>
+                            Zumba
+                        </li>
+        
+                        <li>
+                           Corrida
+                        </li>
+                        
+                        <li>
+                            Power Jump
+                        </li>
+                        
+                        <li>
+                            Instrutor
+                        </li>
+        
+                        <li>
+                           Psicólogo 
+                        </li>
+
+                        <li>
+                            Fisioterapeuta
+                        </li>
+                        
+                        <li>
+                            Nutricionista
+                         </li>
+                    </ul>
+                    <div id="plan">
+                        <h3>R$ 199,90</h3>
+                        <button class="avancado" id="buttonP">Quero esse</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--localização-->
+        <div id="localizacao">
+            <h1>Localização:</h1>
+            <hr>
+            <div id="but_loc">
+                <button id="maringab">Maringá</button>
+                <button id="sarandib">Sarandi</button>
+            </div>
+            <iframe id="sarandi" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.8713988345485!2d-51.87493618538724!3d-23.429012262602402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ecd0749055e291%3A0xf3b46813fb5e57b7!2sGladium%20Academia!5e0!3m2!1spt-BR!2sbr!4v1606697251672!5m2!1spt-BR!2sbr" width="100%" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <iframe id="maringa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d29289.565480906756!2d-51.933766944008084!3d-23.41729731176459!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xaadf32c98eaf0cc5!2sAcademia%20Uplay%20-%20Maring%C3%A1!5e0!3m2!1spt-BR!2sbr!4v1606704091173!5m2!1spt-BR!2sbr" width="100%" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+    </div>
+    <!--Rodapé -->
+    <footer>       
+       <div class="grid_foot">
+            <div id="redes">
+                <img src="img/logo1.png" class="logo">
+                <ul class="redes">
+                    <li>
+                        <img src="img/f.png">
+                    </li>
+
+                    <li>
+                        <img src="img/i.png">
+                    </li>
+                    
+                    <li>
+                    <img src="img/w.png">
+                    </li>
+                    
+                    <li>
+                        <img src="img/e.png">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="grid_foot">
+            <h1>Menu</h1>
+            <hr>
+            <ul>
+                <li>
+                    <a href="#sobre">Sobre</a>
+                </li>
+
+                <li>
+                    <a href="#estrutura">Estrutura</a>
+                </li>
+                
+                <li>
+                    <a href="#localizacao">Localização</a>
+                </li>
+                
+                <li>
+                    <a href="calculadora.html">IMC</a>
+                </li>
+
+                <li>
+                    <a href="contato.html">Contato</a>
+                </li>
+            </ul>
+        </div>
+        <div class="grid_foot">
+            <h1>Atendimento:</h1>
+            <hr>
+            <p> Segunda à Sexta 7h às 22h. </p></br>
+            <p> Sábados das 8h às 19h.</p>
+        </div>
+        <div class="grid_foot">
+            <h1>Localização</h1>
+            <hr>
+            <p>Endereço 1:</p>
+            <p> Av. João Marangoni, 1249 - Novo Panorama, Sarandi - PR</p></br>
+            <p>Endereço 2:</p>
+            <p>Sobreloja do Hipermercado Condor - Av. Colombo, 3404 - Zona 7, Maringá - PR</p>
+        </div>
+    </footer>
+    <nav>Desenvolvido por Maristela, Mykaelly e Yasmin.</nav>
+    <!-- modal -->
+    <div class="modalb">
+        <div class="modal-busca">   
+            <img src="img/popup.png" class="popno">
+            <div id="pop">
+                <span class="close-button">&times;</span>
+                <form action="planner.pdf">
+                    <h1> Seja bem vindo(a) a EasyFit!</h1>
+                    <p>Baixe um menu de dieta e um planner de treino semanal grátis...</p>
+                    <input type="email" id="emailp" placeholder="Informe seu email" required></br></br>
+                    <button class="btn"> Baixar</a>
+                    <p id="msg"></p>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+    <script src="js/jQuery.weightMask.min.js"></script>  
+    <script src='js/anima.js' type='text/javascript'></script>
+</html>
