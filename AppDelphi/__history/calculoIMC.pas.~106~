@@ -1,0 +1,77 @@
+unit calculoIMC;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Buttons, Vcl.ExtCtrls, Vcl.StdCtrls,
+  VCLTee.TeCanvas, Vcl.Samples.Spin, System.ImageList, Vcl.ImgList,
+  Vcl.ComCtrls, System.Actions, Vcl.ActnList, Vcl.ToolWin, Vcl.Imaging.pngimage,
+  Vcl.Imaging.jpeg, Vcl.Mask;
+
+type
+  TForm1 = class(TForm)
+    Shape1: TShape;
+    Panel1: TPanel;
+    Image3: TImage;
+    editHeight: TMaskEdit;
+    editWeight: TMaskEdit;
+    Image2: TImage;
+    Label2: TLabel;
+    Label3: TLabel;
+    Label4: TLabel;
+    SpeedButton1: TSpeedButton;
+    labelAnswer: TLabel;
+    Label1: TLabel;
+    Image1: TImage;
+    procedure SpeedButton1Click(Sender: TObject);
+  private
+  public
+
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+
+procedure TForm1.SpeedButton1Click(Sender: TObject);
+  var
+ num1, num2, answer: real;
+
+  begin
+  num1 := StrToFloat(editWeight.text);
+  num2 := StrToFloat(editHeight.text);
+  answer :=  num1 / (num2 * num2);
+
+  if answer < (18.5) then
+    labelAnswer.Caption := 'Segundo a Organização Mundial de Saúde,  o IMC ' + FloatToStrF((answer), ffFixed, 7, 2) + ' é considerado como "magreza".'
+
+  else if (answer >= (18.5)) and (answer < (25.0)) then
+    labelAnswer.Caption := 'Segundo a Organização Mundial de Saúde,  o IMC ' + FloatToStrF((answer), ffFixed, 7, 2) + ' é considerado como "saudavel".'
+
+  else if (answer >= 25.0) and (answer < (30.0)) then
+    labelAnswer.Caption := 'Segundo a Organização Mundial de Saúde,  o IMC ' + FloatToStrF((answer), ffFixed, 7, 2) + ' é considerado como "Sobrepeso".'
+
+  else if (answer >= 30.0) and (answer < 35.0) then
+    labelAnswer.Caption :=  'Segundo a Organização Mundial de Saúde,  o IMC ' + FloatToStrF((answer), ffFixed, 7, 2) + ' é considerado como "Obesidade Grau I".'
+
+  else if (answer >= 35.0) and (answer < 40.0) then
+    labelAnswer.Caption := 'Segundo a Organização Mundial de Saúde,  o IMC ' + FloatToStrF((answer), ffFixed, 7, 2) + ' é considerado como "Obesidade Grau II".'
+
+  else if (answer >= 40.0) and (answer < 50.0) then
+    labelAnswer.Caption :='Segundo a Organização Mundial de Saúde,  o IMC ' + FloatToStrF((answer), ffFixed, 7, 2) + ' é considerado como "Obesidade Grau III".'
+
+  else if (answer >= 50.0) and (answer < 59.0) then
+    labelAnswer.Caption :='Segundo a Organização Mundial de Saúde,  o IMC ' + FloatToStrF((answer), ffFixed, 7, 2) + ' é considerado como "Super Obeso".'
+
+  else
+    labelAnswer.Caption := 'Segundo a Organização Mundial de Saúde, o IMC ' + FloatToStrF((answer), ffFixed, 7, 2) + ' é considerado como "hiper obeso".'
+
+end;
+
+
+end.

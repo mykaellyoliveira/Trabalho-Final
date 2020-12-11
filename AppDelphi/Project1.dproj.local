@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2020/11/25 02:57:27.000.410,=C:\Program Files (x86)\Embarcadero\Studio\21.0\MeuY\Unit1.pas</Transaction>
+    <Transaction>2020/11/25 03:09:09.000.189,C:\Program Files (x86)\Embarcadero\Studio\21.0\MeuY\progetoFinal\calculoIMC.dfm=C:\Program Files (x86)\Embarcadero\Studio\21.0\MeuY\Unit1.dfm</Transaction>
+    <Transaction>2020/11/25 03:09:09.000.189,C:\Program Files (x86)\Embarcadero\Studio\21.0\MeuY\progetoFinal\calculoIMC.pas=C:\Program Files (x86)\Embarcadero\Studio\21.0\MeuY\Unit1.pas</Transaction>
+    <Transaction>2020/11/25 03:09:13.000.991,C:\Program Files (x86)\Embarcadero\Studio\21.0\MeuY\progetoFinal\Project1.dproj=C:\Program Files (x86)\Embarcadero\Studio\21.0\MeuY\Project1.dproj</Transaction>
+    <Transaction>2020/11/29 16:30:32.000.012,=C:\Users\opc\Downloads\148-FontesFormat\Fontes\uFormat.pas</Transaction>
+    <Transaction>2020/12/01 02:11:12.000.113,C:\Users\opc\Downloads\148-FontesFormat\Fontes\uFormat.pas=</Transaction>
+  </Transactions>
+</BorlandProject>
